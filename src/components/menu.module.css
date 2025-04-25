@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem;
+    background-color: #000;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon:hover {
+    width: 40px;
+    height: 40px;
+    background-color: #7700ff;
+    border-radius: 20px;
+    padding: .5rem;
+}
+
+.backgroundIcon {
+    background-color: #d6b1ff;
+    border-radius: 20px;
+    padding: .25rem;
+}
+
+.navButton {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #6a00ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navButton:hover {
+    background-color: #ae67ff;
+    padding: 0.8rem 2.3rem;
+}
