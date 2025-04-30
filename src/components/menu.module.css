@@ -34,11 +34,86 @@
     background-color: #6a00ff;
     color: #fff;
     border-radius: 8px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     border: none;
     cursor: pointer;
 }
 
 .navButton:hover {
+    background-color: #ae67ff;
+}
+
+.userContainer {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    background-color: #f0f0f0;
+}
+
+.registrationOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.registrationModal {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.registrationModal h2 {
+    margin-left: -.5rem;
+}
+
+.registrationModal form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.registrationModal button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #6a00ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.registrationModal button:hover {
     background-color: #ae67ff;
 }

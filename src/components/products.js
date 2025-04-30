@@ -43,7 +43,7 @@ function Products() {
     }
 
     return (
-        <>
+        <div>
             <img src={bannerImage} alt="Banner" className={styles.banner} />
             <h2>Carros mais populares</h2><br></br>
             <main className={styles.grid}>
@@ -52,8 +52,7 @@ function Products() {
                 <CarCard image={car3} name="Corolla XEi" brand="Toyota" price="249.90" />
                 <CarCard image={car4} name="Renegade Longitude" brand="Jeep" price="229.90" />
                 <CarCard image={car5} name="Argo Drive" brand="Fiat" plate="MNO3P45" price="139.90" />
-                {/* Heurística de 5-prevenção de erro:Carro sem imagem,nome,marca,ou preço */}
-                <CarCard image={null} name="" brand="" price="" />
+                
             </main>
             <hr />
             <h2>Nossos carros</h2>
@@ -73,8 +72,13 @@ function Products() {
                 <CarCard image={car2} name="Onix Plus LT" brand="Chevrolet" price="159.90" />
                 <CarCard image={car3} name="Corolla XEi" brand="Toyota" price="249.90" />
                 <CarCard image={car4} name="Renegade Longitude" brand="Jeep" price="229.90" />
+                {/* Heurística de 5-prevenção de erro:Carro sem imagem,nome,marca,ou preço */}
+                <CarCard image={null} name="" brand="" price="" />
+                <CarCard image={null} name="" brand="" price="" />
+                <CarCard image={null} name="" brand="" price="" />
+                <CarCard image={null} name="" brand="" price="" />
             </main>
-        </>
+        </div>
     );
 }
 
