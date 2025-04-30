@@ -29,17 +29,16 @@
 }
 
 .navButton {
-    font-size: 1.2rem;
-    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
     background-color: #6a00ff;
     color: #fff;
-    border: none;
     border-radius: 8px;
-    cursor: pointer;
     transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .navButton:hover {
     background-color: #ae67ff;
-    padding: 0.8rem 2.3rem;
 }

@@ -50,3 +50,19 @@ h2{
     padding: 1rem;
     font-size: 1rem;
 }
+
+.navButton {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #6a00ff;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.navButton:hover {
+    background-color: #ae67ff;
+}
