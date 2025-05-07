@@ -8,6 +8,7 @@
 }
 
 .icon {
+    /* Tamanho consistente para ícones */
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -29,18 +30,22 @@
 }
 
 .navButton {
+    /* Cor roxa para indicar interatividade */
+    background-color: #6a00ff;
+    /* Texto branco para contraste */
+    color: #fff;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #6a00ff;
-    color: #fff;
     border-radius: 8px;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     border: none;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navButton:hover {
     background-color: #ae67ff;
+    transform: scale(1.05);
 }
 
 .userContainer {
@@ -51,7 +56,7 @@
     position: absolute;
     top: 50px;
     right: 0;
-    background-color: #fff;
+    background-color: #000000;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -69,7 +74,7 @@
 }
 
 .dropdown button:hover {
-    background-color: #f0f0f0;
+    background-color: #3d3d3d;
 }
 
 .registrationOverlay {
@@ -86,34 +91,76 @@
 }
 
 .registrationModal {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 2rem;
-    border-radius: 8px;
-    width: 300px;
+    border-radius: 12px;
+    width: 350px;
     align-items: center;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .registrationModal h2 {
-    margin-left: -.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
 }
 
 .registrationModal form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.registrationModal label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.registrationModal input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.registrationModal input:focus {
+    border-color: #6a00ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 0, 255, 0.5);
 }
 
 .registrationModal button {
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     background-color: #6a00ff;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .registrationModal button:hover {
     background-color: #ae67ff;
+}
+
+.registrationModal a {
+    color: #6a00ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.registrationModal a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 35px;
+    height: auto;
+    margin-right: 1rem;
 }
