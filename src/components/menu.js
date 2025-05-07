@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from "./menu.module.css";
-import carIcon from "./images/directions-car.png";
 import searchIcon from "./images/search.png";
 import userIcon from "./images/person.png";
 import logo from './images/logo.png'; // Importando a logo
@@ -17,7 +16,6 @@ function Menu() {
         <>
             <header className={styles.navbar}>
                 <img src={logo} alt="Logo" className={styles.logo} /> {/* Adicionando a logo */}
-                <img src={carIcon} alt="Car Icon" className={styles.icon} />
                 <button className={styles.navButton}>Home</button>
                 <button className={styles.navButton}>Veículos</button>
                 <img src={searchIcon} alt="Search" className={styles.icon} />
