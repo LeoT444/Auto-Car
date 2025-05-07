@@ -3,6 +3,7 @@ import styles from "./menu.module.css";
 import carIcon from "./images/directions-car.png";
 import searchIcon from "./images/search.png";
 import userIcon from "./images/person.png";
+import logo from './images/logo.png'; // Importando a logo
 
 function Menu() {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -15,6 +16,7 @@ function Menu() {
     return (
         <>
             <header className={styles.navbar}>
+                <img src={logo} alt="Logo" className={styles.logo} /> {/* Adicionando a logo */}
                 <img src={carIcon} alt="Car Icon" className={styles.icon} />
                 <button className={styles.navButton}>Home</button>
                 <button className={styles.navButton}>Veículos</button>
@@ -53,8 +55,9 @@ function Menu() {
                             </label>
                             <button type="submit">Entrar</button>
                         </form><br></br>
-                        <a href="">Esqueci minha senha</a><br></br>
-                        Não possui conta? <button >Cadastrar</button>
+                        <a href="/">Esqueci minha senha</a><br></br>
+                        Não possui conta? <button onClick={() => window.location.href = '/cadastro'}>Cadastrar</button>
+                
                     </div>
                 </div>
             )}

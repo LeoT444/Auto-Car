@@ -39,7 +39,7 @@ function Products() {
 
     // Heurística de status do sistema:Carregando - 1-visibilidade do status do sistema
     if (loading) {
-        return <div>Carregando...</div>;
+        return <div className={styles.loading}>Carregando...</div>; // Adiciona classe para estilização
     }
 
     return (
